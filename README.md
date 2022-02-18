@@ -16,7 +16,7 @@ Then go to root folder. Build builder image
 
 Copy your project in a folder. Create folder named dist. Run instance.
 
-`docker run -vunreal-project:/tmp/project:rw -vdist:/tmp/project/dist:rw mirage-unreal-builder`
+`docker run -v$PWD/unreal-project:/tmp/project -vdist:/tmp/dist mirage-unreal-builder`
 
 # Credit
 
